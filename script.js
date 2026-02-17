@@ -17,4 +17,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+const columnas = document.querySelectorAll(".columna-estudio");
+
+columnas.forEach(columna => {
+
+    columna.addEventListener("click", () => {
+
+        // quitar activa de todas
+        columnas.forEach(col => col.classList.remove("activa"));
+
+        // activar solo la clickeada
+        columna.classList.add("activa");
+
+    });
+
+});
 

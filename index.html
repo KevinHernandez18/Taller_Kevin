@@ -25,41 +25,57 @@
     </header>
     <main>
         <section id="home">
-            <p>Bienvenido a mi portafolio personal. Aquí encontrarás información sobre mis habilidades, estudios, proyectos y sueños.</p>
+            <p>Bienvenido a mi portafolio personal. Aquí encontrarás información sobre mis habilidades, estudios, proyectos y sueños de manera general.</p>
         </section>
 
         <section id="sobre-mi">
-            <h2>Sobre Mi</h2>
-            <p>Me llamo Kevin Alexander Hernández Sierra, tengo 18 años y soy estudiante de programación. Me gusta crear aplicaciones web y aprender nuevas tecnologías.</p>
+            <h2>Sobre Mí (Kevin Alexander Hernández Sierra)</h2>
+            <p>Me llamo Kevin Alexander Hernández Sierra, tengo 18 años y soy estudiante de programación. Soy una persona que disfruta aprendiendo nuevas tecnologías, resolviendo problemas y creando soluciones innovadoras. También me gusta adquirir conocimientos variados relacionados con las ciencias de manera general y autodidacta.</p>
         </section>
 
         <section id="conocimientos">
             <h2>Conocimientos</h2>
-            <p>HTML, CSS, JavaScript, Python, Git y GitHub.</p>
+            <p>Hablando de conocimientos técnicos, tengo experiencia en HTML, CSS, JavaScript, Python, Git y GitHub. Actualmente estoy intentando aprender nuevas tecnologías y nuevos lenguajes para integrar a mis conocimientos y mejorar mis habilidades en programación. También me gusta adquirir conocimientos en áreas relacionadas con las ciencias de manera autodidacta, y también me gustaría estudiar de manera formal en un futuro para poder integrar esos conocimientos de ciencias dentro de mis proyectos de programación.</p>
         </section>
-
         <section id="estudios">
             <h2>Estudios</h2>
             <p>Aquí encontrarás información sobre mi trayectoria educativa, desde la educación primaria hasta la educación superior.</p>
-            <section>
-                <h3>Educación Primaria</h3>
-                <h4>Colegio Bethel (Yopal)</h4>
-                <h5>2013 - 2018</h5>
-                <p>En este colegio inicié mi formación académica primaria. Estudié desde el grado primero hasta el grado sexto.</p>
-            </section>
-            <section>
-                <h3>Educación Secundaria</h3>
-                <h4>Institución Educativa Manuela Beltrán (Yopal)</h4>
-                <h5>2019 - 2023</h5>
-                <p>Mis estudios secundarios los realicé en esta institución, donde desarrollé mis habilidades académicas y sociales. Cursé desde el grado séptimo hasta el grado undécimo.</p>
-            </section>
-            <section>
-                <h3>Educación Tecnóloga</h3>
-                <h4>Centro Agroindustrial de Formación Empresarial de Casanare - CAFEC (SENA)</h4>
-                <h5>2025 - En curso</h5>
-                <p>Estoy cursando el programa de formación tecnológica de Análisis y Desarrollo de Software.</p>
-            </section>
+            <p>Da click sobre cada columna para ver más detalles.</p>
         </section>
+        <div class="estudios-container">
+            <div class="columna-estudio primaria">
+                    <h3>Educación Primaria</h3>
+                    <div class="contenido">
+                        <h4>Colegio Bethel (Yopal)</h4>
+                        <h5>2013 - 2018</h5>
+                        <p>En este colegio inicié mi formación académica primaria. Estudié desde el grado primero hasta el grado sexto.</p>
+                    </div>
+            </div>
+            <div class="columna-estudio secundaria">
+                    <h3>Educación Secundaria</h3>
+                    <div class="contenido">
+                        <h4>Institución Educativa Manuela Beltrán (Yopal)</h4>
+                        <h5>2019 - 2023</h5>
+                        <p>En este colegio cursé mis estudios de bachillerato, desde el grado séptimo hasta el grado undécimo.</p>
+                    </div>
+            </div>
+            <div class="columna-estudio tecnica">
+                    <h3>Educación Técnica</h3>
+                    <div class="contenido">
+                        <h4>Institución Educativa Manuela Beltrán (Yopal) en asociación con el SENA</h4>
+                        <h5>2021 - 2023</h5>
+                        <p>En este programa de formación media técnica adquirí conocimientos en contabilidad, mientras cursaba mis estudios de bachillerato.</p>
+                    </div>
+            </div>
+            <div class="columna-estudio tecnologa">
+                    <h3>Educación Tecnóloga</h3>
+                    <div class="contenido">
+                        <h4>Centro Agroindustrial de Formación Empresarial de Casanare - CAFEC (SENA)</h4>
+                        <h5>2025 - En curso</h5>
+                        <p>Estoy cursando el programa de formación tecnológica de Análisis y Desarrollo de Software.</p>
+                    </div>
+            </div>
+        </div>
 
         <section id="habilidades">
             <h2>Habilidades</h2>
@@ -78,17 +94,17 @@
                         <div class="progreso html"></div>
                     </div>
                     <p class="skill-description">
-                        Tengo conocimientos en diseño responsivo, Flexbox, Grid y creación de interfaces modernas.
+                        Tengo conocimientos en estructura de páginas web con HTML, incluyendo semántica, estructura de contenido y manejo de etiquetas.
                     </p>
                 </div>
                 <hr>
-                <div class="skill" data-percent="80">
+                <div class="skill" data-percent="60">
                     <div class="skill-header">
                             <div class="skill-info">
                                 <img src="asset/content/iconos/css icon.svg" alt="CSS Icon" class="skill-icon">
                                 <span>CSS</span>
                             </div>
-                            <span class="percent-text">80%</span>
+                            <span class="percent-text">60%</span>
                     </div>
                     <div class="barra">
                         <div class="progreso css"></div>
@@ -200,8 +216,25 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2026. Portafolio realizado por Kevin Hernández Sierra. Todos los derechos reservados.</p> 
+        <p>&copy; 2026. Portafolio realizado por Kevin Hernández Sierra. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="asset/content/iconos/whatsapp icon.svg" alt="WhatsApp">
+            </a>
+
+            <a href="https://facebook.com" target="_blank">
+                <img src="asset/content/iconos/facebook icon.svg" alt="Facebook">
+            </a>
+
+            <a href="https://instagram.com" target="_blank">
+                <img src="asset/content/iconos/instagram icon.svg" alt="Instagram">
+            </a>
+
+            <a href="https://GMAIL.com" target="_blank">
+                <img src="asset/content/iconos/gmail icon.svg" alt="GMAIL">
+            </a>
     </footer>
     <script src="script.js"></script>
+    
 </body>
 </html>
