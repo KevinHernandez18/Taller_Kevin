@@ -51,3 +51,21 @@ setInterval(() => {
     }, 400);
 
 }, 8000);
+
+const video = document.getElementById("videoFondo");
+const freezeTime = 15;
+
+video.addEventListener("timeupdate", () => {
+    if (video.currentTime >= freezeTime) {
+        video.pause();
+        video.currentTime = freezeTime;
+    }
+});
+
+window.addEventListener("load", () => {
+    const texto = document.querySelector(".contenido-conocimientos");
+
+    setTimeout(() => {
+        texto.classList.add("mostrar");
+    }, 3000);
+});
