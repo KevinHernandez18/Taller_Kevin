@@ -23,13 +23,49 @@ columnas.forEach(columna => {
 
     columna.addEventListener("click", () => {
 
-        // quitar activa de todas
         columnas.forEach(col => col.classList.remove("activa"));
 
-        // activar solo la clickeada
         columna.classList.add("activa");
 
     });
 
 });
 
+const imagenes = [
+    "asset/images/mundo.png",
+    "asset/images/LATAM.jpg",
+    "asset/images/tecnologia.jpg",
+    "asset/images/starship.jpeg"
+];
+
+let indice = 0;
+const img = document.getElementById("galeria-img");
+
+setInterval(() => {
+    indice = (indice + 1) % imagenes.length;
+    img.style.opacity = 0;
+
+    setTimeout(() => {
+        img.src = imagenes[indice];
+        img.style.opacity = 1;
+    }, 400);
+
+}, 8000);
+
+const video = document.getElementById("videoFondo");
+const freezeTime = 15;
+
+video.addEventListener("timeupdate", () => {
+    if (video.currentTime >= freezeTime) {
+        video.pause();
+        video.currentTime = freezeTime;
+    }
+});
+
+window.addEventListener("load", () => {
+    const texto = document.querySelector(".contenido-conocimientos");
+
+    setTimeout(() => {
+        texto.classList.add("mostrar");
+    }, 3000);
+});
