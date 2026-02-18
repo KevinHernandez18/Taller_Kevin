@@ -5,35 +5,236 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Kevin Hernández Sierra</title>
     <link rel="stylesheet" href="Styles.css">
-    <script src="script.js"></script>
+    <link rel="icon" href="asset/content/iconos/icono.png" type="image/png">
 </head>
 <body>
     <header>
-        <h1>Kevin Hernández Sierra</h1>
-        <nav>
-            <ul>
-                <li><a href="#casa">Home</a></li>
-                <li><a href="#sobre-mi">Sobre Mi</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1 class="logo-nombre">Kevin Hernández</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre-mi">Sobre Mi</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <img src="asset/content/iconos/icono.png" alt="Logo">
+            </div>
+        </div>
     </header>
     <main>
         <section id="home">
-            <h2>Home</h2>
-            <p>Bienvenido a la sección home de mi portafolio.</p>
+            <p>Bienvenido a mi portafolio personal. Aquí encontrarás información sobre mis habilidades, estudios, proyectos y sueños de manera general.</p>
         </section>
+
         <section id="sobre-mi">
-            <h2>Sobre Mi</h2>
-            <p>Me llamo Kevin Alexander Hernández Sierra, tengo 18 años y soy estudiante de programación. Me gusta crear aplicaciones web y aprender nuevas tecnologías.</p>
+            <h2>Sobre Mí (Kevin Alexander Hernández Sierra)</h2>
+            <p>Me llamo Kevin Alexander Hernández Sierra, tengo 18 años y soy estudiante de programación. Soy una persona que disfruta aprendiendo nuevas tecnologías, resolviendo problemas y creando soluciones innovadoras. También me gusta adquirir conocimientos variados relacionados con las ciencias de manera general y autodidacta.</p>
         </section>
+
+        <section id="conocimientos">
+            <h2>Conocimientos</h2>
+            <p>Hablando de conocimientos técnicos, tengo experiencia en HTML, CSS, JavaScript, Python, Git y GitHub. Actualmente estoy intentando aprender nuevas tecnologías y nuevos lenguajes para integrar a mis conocimientos y mejorar mis habilidades en programación. También me gusta adquirir conocimientos en áreas relacionadas con las ciencias de manera autodidacta, y también me gustaría estudiar de manera formal en un futuro para poder integrar esos conocimientos de ciencias dentro de mis proyectos de programación.</p>
+        </section>
+        <section id="estudios">
+            <h2>Estudios</h2>
+            <p>Aquí encontrarás información sobre mi trayectoria educativa, desde la educación primaria hasta la educación superior.</p>
+            <p>Da click sobre cada columna para ver más detalles.</p>
+        </section>
+        <div class="estudios-container">
+            <div class="columna-estudio primaria">
+                    <h3>Educación Primaria</h3>
+                    <div class="contenido">
+                        <h4>Colegio Bethel (Yopal)</h4>
+                        <h5>2013 - 2018</h5>
+                        <p>En este colegio inicié mi formación académica primaria. Estudié desde el grado primero hasta el grado sexto.</p>
+                    </div>
+            </div>
+            <div class="columna-estudio secundaria">
+                    <h3>Educación Secundaria</h3>
+                    <div class="contenido">
+                        <h4>Institución Educativa Manuela Beltrán (Yopal)</h4>
+                        <h5>2019 - 2023</h5>
+                        <p>En este colegio cursé mis estudios de bachillerato, desde el grado séptimo hasta el grado undécimo.</p>
+                    </div>
+            </div>
+            <div class="columna-estudio tecnica">
+                    <h3>Educación Técnica</h3>
+                    <div class="contenido">
+                        <h4>Institución Educativa Manuela Beltrán (Yopal) en asociación con el SENA</h4>
+                        <h5>2021 - 2023</h5>
+                        <p>En este programa de formación media técnica adquirí conocimientos en contabilidad, mientras cursaba mis estudios de bachillerato.</p>
+                    </div>
+            </div>
+            <div class="columna-estudio tecnologa">
+                    <h3>Educación Tecnóloga</h3>
+                    <div class="contenido">
+                        <h4>Centro Agroindustrial de Formación Empresarial de Casanare - CAFEC (SENA)</h4>
+                        <h5>2025 - En curso</h5>
+                        <p>Estoy cursando el programa de formación tecnológica de Análisis y Desarrollo de Software.</p>
+                    </div>
+            </div>
+        </div>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <p>Aquí encontrarás mis habilidades técnicas, blandas y de comunicación.</p>
+            <section>
+                <h3>Habilidades Técnicas</h3>
+                <div class="skill" data-percent="86">
+                    <div class="skill-header">
+                            <div class="skill-info">
+                                <img src="asset/content/iconos/html icon.svg" alt="HTML Icon" class="skill-icon">
+                                <span>HTML</span>
+                            </div>
+                            <span class="percent-text">86%</span>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso html"></div>
+                    </div>
+                    <p class="skill-description">
+                        Tengo conocimientos en estructura de páginas web con HTML, incluyendo semántica, estructura de contenido y manejo de etiquetas.
+                    </p>
+                </div>
+                <hr>
+                <div class="skill" data-percent="60">
+                    <div class="skill-header">
+                            <div class="skill-info">
+                                <img src="asset/content/iconos/css icon.svg" alt="CSS Icon" class="skill-icon">
+                                <span>CSS</span>
+                            </div>
+                            <span class="percent-text">60%</span>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso css"></div>
+                    </div>
+                    <p class="skill-description">
+                        Tengo conocimientos en diseño responsivo, Flexbox, Grid y creación de interfaces modernas.
+                    </p>
+                </div>
+                <hr>
+                <div class="skill" data-percent="10">
+                    <div class="skill-header">
+                            <div class="skill-info">
+                                <img src="asset/content/iconos/js icon.svg" alt="JavaScript Icon" class="skill-icon">
+                                <span>JavaScript</span>
+                            </div>
+                            <span class="percent-text">10%</span>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso js"></div>
+                    </div>
+                    <p class="skill-description">
+                        Tengo conocimientos básicos en JavaScript, me encuentro actualmente aprendiendo y mejorando mis habilidades en este lenguaje de programación.
+                    </p>
+                </div>
+                <hr>
+                <div class="skill" data-percent="60">
+                    <div class="skill-header">
+                            <div class="skill-info">
+                                <img src="asset/content/iconos/python icon.svg" alt="Python Icon" class="skill-icon">
+                                <span>Python</span>
+                            </div>
+                            <span class="percent-text"> 60%</span>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso python"></div>
+                    </div>
+                    <p class="skill-description">
+                        Tengo conocimientos medianamente avanzados en Python, he trabajado en varios proyectos académicos utilizando este lenguaje de programación, y suele ser bastante cómodo y intuitivo al momento de trabajar.
+                    </p>
+                </div>
+                <hr>
+                <div class="skill" data-percent="90">
+                    <div class="skill-header">
+                            <div class="skill-info">
+                                <img src="asset/content/iconos/git icon.svg" alt="Git Icon" class="skill-icon">
+                                <img src="asset/content/iconos/github icon.svg" alt="GitHub Icon" class="skill-icon">
+                                <span>Git y GitHub</span>
+                            </div>
+                            <span class="percent-text">90%</span>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso github"></div>
+                    </div>
+                    <p class="skill-description">
+                        Tengo conocimientos en diseño responsivo, Flexbox, Grid y creación de interfaces modernas.
+                    </p>
+                </div>
+                <hr>
+            </section>
+            <section>
+                <h3>Habilidades Blandas</h3>
+                <p></p>
+            </section>
+            <section>
+                <h3>Habilidades de Comunicación</h3>
+                <p></p>
+            </section>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <p></p>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <p>En mis tiempos libres, disfruto de actividades variadas. Aquí están algunas de las que más suelo practicar:</p>
+            <li>
+            <dl>
+                <dt>Fotografía</dt>
+                    <dd><p>Me gusta capturar momentos especiales y paisajes hermosos con mi dispositivo.</p></dd>
+                <dt>Aprendizaje</dt>
+                    <dd><p>Me encanta aprender cosas nuevas, especialmente relacionadas con la tecnología, las ciencias y la programación.</p></dd>
+                <dt>Videojuegos</dt>
+                    <dd><p>Disfruto jugar videojuegos, especialmente aquellos que tienen una buena historia y gráficos impresionantes.</p></dd>
+                <dt>Deportes</dt>
+                    <dd><p>Me gusta practicar deportes como el fútbol y el voleibol para mantenerme activo y saludable.</p></dd>
+            </dl>
+        </section>
+
+        <section id="sueños">
+            <h2>Sueños</h2>
+            <p></p>
+        </section>
+
         <section id="contacto">
             <h2>Contacto</h2>
             <p>Puedes contactarme a través de mi correo electrónico: khernandezsierra895@gmail.com</p>
         </section>
+
+        <section id="video">
+            <iframe width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/VxrIZGQfxmE" 
+                title="Video de presentación"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2026. Portafolio de Kevin Hernández Sierra. Todos los derechos reservados.</p> 
+        <p>&copy; 2026. Portafolio realizado por Kevin Hernández Sierra. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="asset/content/iconos/whatsapp icon.svg" alt="WhatsApp">
+            </a>
+
+            <a href="https://facebook.com" target="_blank">
+                <img src="asset/content/iconos/facebook icon.svg" alt="Facebook">
+            </a>
+
+            <a href="https://instagram.com" target="_blank">
+                <img src="asset/content/iconos/instagram icon.svg" alt="Instagram">
+            </a>
+
+            <a href="https://GMAIL.com" target="_blank">
+                <img src="asset/content/iconos/gmail icon.svg" alt="GMAIL">
+            </a>
     </footer>
+    <script src="script.js"></script>
+    
 </body>
 </html>
